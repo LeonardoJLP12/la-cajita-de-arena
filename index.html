@@ -5,30 +5,202 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Cajita de Arena</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="IMG/Logo 1.jpeg" type="image/x-icon">
+    <link rel="icon" href="IMG/Logo 3 (grande).jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+<a href="https://wa.me/51989071363" class="whatsapp-float" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 <body>
-    <header class="titulo-container">
-        <h1>Bienvenidos a La Cajita de Arena</h1>
-        <p>Un espacio para aprender y explorar</p>
+
+    <div class="top-bar">
+        <div class="contact-info">
+            📍 Dirección: Calle los Geranios 203 Urb 2 de julio | 📞 +51 989-071-363 | ✉ lacajitadearenademisspatty@gmail.com
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/share/1D7Bj5xdFu/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-facebook"></i> </a>
+
+            <a href="https://www.instagram.com/lacajita.dearena?utm_source=qr&igsh=MTExdzd3dnNiNzBzaw==" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i> </a>
+
+            <a href="https://www.tiktok.com/@lacajitadearenamisspatty?_t=ZM-8u8tj3W1Zfp&_r=1" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-tiktok"></i> </a>
+        
+            <a href="https://wa.me/51989071363" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-whatsapp"></i> </a>
+        </div>        
+    </div>
+
+    <header>
+        <div class="overlay">   
+            <img src="IMG/abccc.png" alt="La Cajita de Arena" class="logo">
+            <h1>La Cajita de Arena</h1>
+            <h3>Terapias integrales infantiles</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav class="menu-container">
-        <ul>
-            <li><a href="Inicio.html">inicio</a></li>
-            <li><a href="Informacion.html">Información</a></li>
-            <li><a href="Citas.html">Citas</a></li>
-            <li><a href="Contactanos.html">Contactanos</a></li>
-        </ul>
-    </nav>
+    <section id="bienvenida" class="bienvenida">
+        <div class="bienvenida-contenido">
+            <h1>Bienvenidos a La Cajita de Arena</h1>
+            <p>Descubre terapias integrales infantiles con un enfoque didáctico e informativo.</p>
+        </div>
+    </section>    
+    <br>
+    <div class="carrusel">
+        <div class="carrusel-contenedor">
+            <img src="IMG/Grupo 2.jpeg" alt="Imagen 1">
+            <img src="IMG/Salon 1.jpeg" alt="Imagen 2">
+            <img src="IMG/Grupo 1.jpeg" alt="Imagen 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>    
     
-    <section id="recursos">
-        <h2>Recursos Educativos</h2>
-        <p>Aquí encontrarás materiales didácticos para mejorar tu aprendizaje</p>
-        <button id="mostrarMensaje">Descubre más</button>
-        <p id="mensaje" style="display: none;">¡Pronto agregaremos más contenido!</p>
+    <section class="presentacion">
+        <img src="IMG/MissPatty.jpeg" alt="Miss Patty" class="foto-circular">
+        <div class="texto-presentacion">
+            <h2>¡Hola! Soy Miss Patty</h2>
+            <h3>Directora de La Cajita de Arena</h3>
+            <p>
+                Soy psicóloga con especialización en Terapia de Lenguaje y Aprendizaje, y maestría en Problemas de Aprendizaje.
+            </p>
+            <p>
+                Cuento con más de 22 años de experiencia en terapias infantiles, abordando Trastornos del Lenguaje, Aprendizaje y Espectro Autista (TEA).
+            </p>
+            <div class="caja-resaltada">
+                <p><strong>Mi experiencia:</strong></p>
+                <ul>
+                    <li>Directora de <strong>La Cajita de Arena</strong>, brindamos terapias integrales infantiles.</li>
+                    <li>Docente y creadora del curso “Acompañante escolar del niño autista”.</li>
+                    <li>Especialista en metodologías basadas en el juego y diagnóstico de TEA.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="nuestros-servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Ofrecemos terapias especializadas para niños, enfocándonos en su desarrollo integral y bienestar emocional.</p>
+    
+        <div class="servicios-container">
+            <!-- Primera fila -->
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="IMG/Servicio1.jpg" alt="Terapia de Lenguaje y Comunicación">
+                    <a href="Servicios.html" class="ver-mas">Ver más</a>
+                </div>
+                <h3>Terapia de Lenguaje y Comunicación</h3>
+                <p>Mejoramos habilidades de comunicación, expresión verbal y comprensión del lenguaje.</p>
+            </div>
+    
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="IMG/Servicio2.jpg" alt="Terapia Ocupacional">
+                    <a href="Servicios.html" class="ver-mas">Ver más</a>
+                </div>
+                <h3>Terapia Ocupacional</h3>
+                <p>Enfoque en integración sensorial, grafomotricidad y actividades de la vida diaria (AVD).</p>
+            </div>
+    
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="IMG/Servicio3.jpg" alt="Terapia de Aprendizaje">
+                    <a href="Servicios.html" class="ver-mas">Ver más</a>
+                </div>
+                <h3>Terapia de Aprendizaje</h3>
+                <p>Apoyamos el desarrollo cognitivo y habilidades académicas en los niños.</p>
+            </div>
+        </div>
+    
+        <br><br>
+    
+        <div class="servicios-container">
+            <!-- Segunda fila -->
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="IMG/Servicio4.jpg" alt="Terapia Física">
+                    <a href="Servicios.html" class="ver-mas">Ver más</a>
+                </div>
+                <h3>Terapia Física</h3>
+                <p>Fortalecemos la movilidad y habilidades motoras de los niños.</p>
+            </div>
+    
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="IMG/Servicio5.jpg" alt="Psicología Infantil">
+                    <a href="Servicios.html" class="ver-mas">Ver más</a>
+                </div>
+                <h3>Psicología Infantil</h3>
+                <p>Brindamos apoyo emocional y conductual para un desarrollo saludable en los niños.</p>
+            </div>
+    
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="IMG/Servicio6.jpg" alt="Terapia de Psicomotricidad">
+                    <a href="Servicios.html" class="ver-mas">Ver más</a>
+                </div>
+                <h3>Terapia de Psicomotricidad</h3>
+                <p>Fomentamos el control del cuerpo y la coordinación en los niños.</p>
+            </div>
+        </div>
     </section>
     
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Primera fila: Redes Sociales -->
+            <div class="footer-section social">
+                <h3>¡Síguenos en nuestras redes!</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/share/1D7Bj5xdFu/" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lacajita.dearena" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@lacajitadearenamisspatty" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <!-- Segunda fila: Mapa -->
+            <div class="footer-section map">
+                <h3>Ubicación</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1950.92420955886!2d-77.1067310509237!3d-12.053948538334884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cbfceb19600f%3A0x60886733a7806b98!2sC.%20los%20Geranios%20203%2C%20Callao%2007001!5e0!3m2!1ses!2spe!4v1740360346455!5m2!1ses!2spe" 
+                    width="100%" 
+                    height="250" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+    
+            <!-- Tercera fila: Enlaces y Copyright -->
+            <div class="footer-section links">
+                <h3><a href="ST.html">Soporte Tecnico</a> <br></h3>
+                <h3><a href="TyC.html">Términos y Condiciones</a> <br></h3>
+                <h3><a href="PP.html">Política de Privacidad</a> <br></h3>
+                <h3><a href="PC.html">Política de Cookies</a> <br></h3>
+                <h3><a href="PF.html">Preguntas Frecuentes</a> <br></h3>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Cajita de Arena. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
