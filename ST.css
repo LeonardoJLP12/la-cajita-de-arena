@@ -58,13 +58,13 @@ header {
 
 .contact-form button {
     margin-top: 15px;
-    padding: 10px;
+    padding: 12px;
     background-color: #88bbcc;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px; /* Aumenté el tamaño del texto */
+    font-size: 18px;
     font-weight: bold;
     transition: transform 0.2s ease-in-out;
 }
@@ -93,30 +93,20 @@ footer a:hover {
     text-decoration: underline;
 }
 
-.btn-enviar {
-    font-size: 18px;
-    padding: 12px;
-    font-weight: bold;
-}
-
 /* 🔹 Responsive Design para móviles 🔹 */
 @media screen and (max-width: 600px) {
-    .container {
-        width: 95%; /* Asegura que no haya scroll horizontal */
+    .contact-form {
+        width: 90%;
         margin: 20px auto;
         padding: 15px;
     }
 
-    h1 {
+    header h1 {
         font-size: 20px;
     }
 
-    .question {
-        font-size: 16px;
-    }
-
-    .answer {
-        font-size: 14px;
+    .soporte-texto {
+        font-size: 18px;
     }
 
     footer {

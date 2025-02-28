@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soporte Técnico</title>
     <link rel="stylesheet" href="ST.css">
-    <link rel="icon" href="IMG/abccc.png"> 
+    <link rel="icon" href="IMG/abccc.png">
 </head>
+
 <body>
     <header>
         <h1>Soporte Técnico</h1>
@@ -16,8 +17,11 @@
     <section id="contact-form" class="contact-form">
         <h2>Formulario de Contacto</h2>
         <form action="https://formsubmit.co/lacajitadearenademisspatty@gmail.com" method="POST">
-            <input type="hidden" name="_next" value="https://tupagina.com/gracias.html">
+            <!-- Evita el captcha -->
             <input type="hidden" name="_captcha" value="false">
+            
+            <!-- Redirección después de enviar -->
+            <input type="hidden" name="_next" value="https://www.lacajitadearena.com/gracias.html">
 
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
@@ -33,7 +37,9 @@
     </section>
 
     <footer>
-        <p>Si necesitas más ayuda, contáctanos en <a href="mailto:lacajitadearenademisspatty@gmail.com">lacajitadearenademisspatty@gmail.com</a></p>
+        <p>Si necesitas más ayuda, contáctanos en 
+            <a href="mailto:lacajitadearenademisspatty@gmail.com">lacajitadearenademisspatty@gmail.com</a>
+        </p>
     </footer>
 </body>
 </html>
