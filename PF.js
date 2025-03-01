@@ -4,7 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     questions.forEach(question => {
         question.addEventListener("click", () => {
             const answer = question.nextElementSibling;
-            answer.style.display = (answer.style.display === "block") ? "none" : "block";
+
+            if (answer.style.maxHeight) {
+                answer.style.maxHeight = null; // Oculta con animación
+            } else {
+                answer.style.maxHeight = answer.scrollHeight + "px"; // Muestra con animación
+            }
         });
     });
 });

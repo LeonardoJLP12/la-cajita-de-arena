@@ -1,0 +1,57 @@
+.sobre-nosotros {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.equipo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.miembro {
+    width: 250px;
+    text-align: center;
+}
+
+.miembro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #88bbcc;
+}
+
+.miembro h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.miembro p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* 📌 RESPONSIVE: Se ajusta en móviles para que se vean bien */
+@media (max-width: 1024px) {
+    .equipo {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .equipo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
