@@ -484,6 +484,10 @@ button:hover {
     color: #ff9800;
 }
 
+.social-text {
+    font-weight: normal;
+}
+
 /* Mapa */
 .map iframe {
     width: 100%;
