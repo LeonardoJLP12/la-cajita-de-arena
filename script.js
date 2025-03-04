@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (bienvenida) {
         bienvenida.addEventListener("mouseover", function () {
-            bienvenida.style.color = "#ff9800"; // Opcional: Cambia solo el color del texto
+            bienvenida.style.color = "#000000"; // Opcional: Cambia solo el color del texto
         });
 
         bienvenida.addEventListener("mouseout", function () {

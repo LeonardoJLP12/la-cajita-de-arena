@@ -72,22 +72,26 @@ header h1, header h3 {
 
 /* Sección de bienvenida */
 .bienvenida {
-    text-align: center;
-    padding: 10px 0;
+    text-align: center; /* Alineación centrada */
+    padding: 30px 0; /* Espaciado similar */
+    background-color: transparent; /* Fondo transparente */
 }
 
+
 .bienvenida h1 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #000000; /* Texto negro */
-    margin-bottom: 5px;
+    font-size: 28px; /* Tamaño del título */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color oscuro */
+    margin-bottom: 10px; /* Espaciado debajo del título */
 }
 
 .bienvenida p {
-    font-size: 16px;
+    font-size: 18px; /* Tamaño del párrafo */
     font-weight: normal;
-    color: #000000; /* Texto negro */
-    margin-top: 0;
+    color: #666; /* Color gris oscuro */
+    max-width: 700px; /* Ancho máximo para mejorar lectura */
+    margin: 0 auto; /* Centrar horizontalmente */
+    line-height: 1.6; /* Espaciado entre líneas */
 }
 
 /* Contenedor para evitar separación */
