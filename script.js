@@ -3,14 +3,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (bienvenida) {
         bienvenida.addEventListener("mouseover", function () {
-            bienvenida.style.backgroundColor = "#88bbcc"; // Azul claro más vivo
+            bienvenida.style.color = "#ff9800"; // Opcional: Cambia solo el color del texto
         });
 
         bienvenida.addEventListener("mouseout", function () {
-            bienvenida.style.backgroundColor = "#88bbcc"; // Azul original más suave
+            bienvenida.style.color = "#000000"; // Vuelve a negro al salir
         });
     }
 });
+
 // Carrusel
 
 document.addEventListener("DOMContentLoaded", function () {

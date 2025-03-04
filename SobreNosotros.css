@@ -6,68 +6,211 @@
     font-family: Arial, sans-serif;
 }
 
-/* 🔹 Sección "Sobre Nosotros" 🔹 */
-.seccion-sobre-nosotros {
-    text-align: center;
-    background-color: #eaf4fc; /* Color de fondo similar */
-    padding: 20px 0;
+/* Sección de Terapia */
+.areas-terapia {
+    padding: 40px 20px;
 }
 
-.titulo-sobre-nosotros {
-    font-weight: normal !important; /* Quita la negrita */
-}
-
-.descripcion-sobre-nosotros {
-    font-size: 16px;
-    color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-
-/* 🔹 Sección del Equipo 🔹 */
-.equipo {
+/* Contenedor de tarjetas */
+.contenedor {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
 }
 
-.miembro {
-    background: #ecf0f1;
-    border-radius: 12px;
+/* Tarjetas */
+.tarjeta {
+    background: white;
+    width: 300px;
     padding: 20px;
-    width: 250px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
-.miembro:hover {
+.tarjeta:hover {
     transform: translateY(-5px);
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
-.miembro img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+/* Imágenes */
+.tarjeta img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
-    border: 3px solid #3498db;
+    border-radius: 15px;
 }
 
-.miembro h3 {
+/* Títulos y textos */
+.tarjeta h3 {
     font-size: 18px;
-    margin: 10px 0;
-    color: #2c3e50;
+    margin: 15px 0 10px;
+    color: #333;
 }
 
-.miembro p {
+.tarjeta p {
     font-size: 14px;
-    color: #666;
+    color: #555;
+    line-height: 1.5;
 }
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.sobre-nosotros {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f9fa;
+}
+
+.sobre-nosotros h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre-nosotros h3 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: normal;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: #88bbcc; /* Rojo */
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
+}
+
+header .overlay {
+    background: #88bbcc; /* Rojo */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+header .overlay:hover {
+    background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin-bottom: 5px; /* Reduce el espacio entre el título y el subtítulo */
+}
+
+header h1, header h3 {
+    color: #ffffff;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+    background-color: #88bbcc; /* Rojo */
+    color: #ffffff; /* Texto blanco */
+    padding: 5px;
+    height: 70px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Contenedor para evitar separación */
+.bienvenida-contenido {
+    display: inline-block; /* Mantiene los textos juntos */
+}
+
+/* Ajuste de estilos del texto */
+.bienvenida h1, .bienvenida p {
+    margin: 0;
+    padding: 3px 0;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+/* Efecto hover */
+.bienvenida:hover {
+    background-color: #88bbcc; /* Rojo más oscuro */
+}
+
+.bienvenida:hover h1, .bienvenida:hover p {
+    color: #f5f5f5; /* Texto negro en hover */
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #000000; 
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block; /* Cambio a inline-block para aplicar transformaciones */
+    margin: 0 15px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Amarillo al pasar el mouse */
+}
+
+
+/* Barra superior */
+.top-bar {
+    background-color: #000; /* Negro */
+    color: #fff; /* Texto blanco */
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.contact-info {
+    font-weight: bold;
+} 
+
 
 /* 🔹 Footer 🔹 */
 .footer {

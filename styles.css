@@ -72,12 +72,22 @@ header h1, header h3 {
 
 /* Sección de bienvenida */
 .bienvenida {
-    background-color: #88bbcc; /* Rojo */
-    color: #ffffff; /* Texto blanco */
-    padding: 5px;
-    height: 70px;
     text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px 0;
+}
+
+.bienvenida h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Texto negro */
+    margin-bottom: 5px;
+}
+
+.bienvenida p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #000000; /* Texto negro */
+    margin-top: 0;
 }
 
 /* Contenedor para evitar separación */
@@ -85,39 +95,24 @@ header h1, header h3 {
     display: inline-block; /* Mantiene los textos juntos */
 }
 
-/* Ajuste de estilos del texto */
-.bienvenida h1, .bienvenida p {
-    margin: 0;
-    padding: 3px 0;
-    color: #ffffff;
-    transition: color 0.3s ease;
-    display: block;
-}
-
-/* Efecto hover */
-.bienvenida:hover {
-    background-color: #88bbcc; /* Rojo más oscuro */
-}
-
-.bienvenida:hover h1, .bienvenida:hover p {
-    color: #f5f5f5; /* Texto negro en hover */
-}
-
 /* Barra de navegación */
 nav {
     background-color: #000000; 
     padding: 10px 0;
     width: 100%;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline-block; /* Cambio a inline-block para aplicar transformaciones */
+    display: inline-block; /* Mantiene los elementos en línea */
     margin: 0 15px;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease;
 }
 
 nav ul li a {
