@@ -1,0 +1,54 @@
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta {
+        width: 90%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 45%;
+    }
+}
+
+/* Estilos para pantallas grandes (PC) */
+@media screen and (min-width: 1025px) {
+    .contenedor {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tarjeta {
+        width: 30%;
+    }
+}
