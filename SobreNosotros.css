@@ -6,6 +6,10 @@
     font-family: Arial, sans-serif;
 }
 
+body {
+    background-color: #e3f2fd;
+}
+
 /* Sección de Terapia */
 .areas-terapia {
     padding: 40px 20px;
@@ -66,7 +70,7 @@
 .sobre-nosotros {
     text-align: center;
     padding: 40px 20px;
-    background-color: #f8f9fa;
+    background-color: #e3f2fd;
 }
 
 .sobre-nosotros h1 {
