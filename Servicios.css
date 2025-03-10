@@ -226,6 +226,73 @@ nav ul li a:hover {
     font-weight: bold;
 } 
 
+.servicios {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra cada servicio */
+    gap: 20px; /* Espacio entre los cuadros */
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.servicio p {
+    text-align: justify;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra cada servicio */
+    gap: 20px; /* Espacio entre los cuadros */
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.servicio {
+    width: 100%;
+    max-width: 600px; /* Controla hasta dónde se extiende */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* Reduje el margen para que no haya tanta diferencia de tamaño */
+    transition: transform 0.3s ease-in-out;
+    min-height: 200px; /* Asegura que todos tengan la misma altura mínima */
+}
+
+.servicios-titulo {
+    margin-bottom: 15px; /* Reduce la distancia entre el título y el contenido */
+}
+
+.servicios {
+    padding-top: 0px; /* Elimina espacio extra arriba de los cuadros */
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para la imagen (centrada verticalmente) */
+.servicio img {
+    width: 200px; /* Ajusta según lo que necesites */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; /* Esquinas ligeramente redondeadas */
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del texto */
+.servicio-contenido {
+    flex: 1;
+    text-align: justify;
+}
+
+
 
 /* 🔹 Footer 🔹 */
 .footer {
