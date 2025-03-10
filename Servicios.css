@@ -1,0 +1,422 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3f2fd;
+}
+
+/* Tipo de letra */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+/* Sección de Terapia */
+.areas-terapia {
+    padding: 40px 20px;
+}
+
+/* Contenedor de tarjetas */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+/* Imágenes */
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Títulos y textos */
+.tarjeta h3 {
+    font-size: 18px;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.sobre-nosotros {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.sobre-nosotros h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.sobre-nosotros h3 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: normal;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+/* Header */
+header {
+    position: relative;
+    background-color: #88bbcc; /* Rojo */
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
+}
+
+header .overlay {
+    background: #88bbcc; /* Rojo */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+header .overlay:hover {
+    background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo */
+    margin-bottom: 10px;
+}
+
+header h1 {
+    margin-bottom: 5px; /* Reduce el espacio entre el título y el subtítulo */
+}
+
+header h1, header h3 {
+    color: #ffffff;
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+    background-color: #88bbcc; /* Rojo */
+    color: #ffffff; /* Texto blanco */
+    padding: 5px;
+    height: 70px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Contenedor para evitar separación */
+.bienvenida-contenido {
+    display: inline-block; /* Mantiene los textos juntos */
+}
+
+/* Ajuste de estilos del texto */
+.bienvenida h1, .bienvenida p {
+    margin: 0;
+    padding: 3px 0;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+/* Efecto hover */
+.bienvenida:hover {
+    background-color: #88bbcc; /* Rojo más oscuro */
+}
+
+.bienvenida:hover h1, .bienvenida:hover p {
+    color: #f5f5f5; /* Texto negro en hover */
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #000000; 
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block; /* Cambio a inline-block para aplicar transformaciones */
+    margin: 0 15px;
+    transition: transform 0.3s ease; /* Transición suave */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Amarillo al pasar el mouse */
+}
+
+
+/* Barra superior */
+.top-bar {
+    background-color: #000; /* Negro */
+    color: #fff; /* Texto blanco */
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.contact-info {
+    font-weight: bold;
+} 
+
+.servicios {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra cada servicio */
+    gap: 20px; /* Espacio entre los cuadros */
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.servicio p {
+    text-align: justify;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en columna */
+    align-items: center; /* Centra cada servicio */
+    gap: 20px; /* Espacio entre los cuadros */
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.servicio {
+    width: 100%;
+    max-width: 600px; /* Controla hasta dónde se extiende */
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* Reduje el margen para que no haya tanta diferencia de tamaño */
+    transition: transform 0.3s ease-in-out;
+    min-height: 200px; /* Asegura que todos tengan la misma altura mínima */
+}
+
+.servicios-titulo {
+    margin-bottom: 15px; /* Reduce la distancia entre el título y el contenido */
+}
+
+.servicios {
+    padding-top: 0px; /* Elimina espacio extra arriba de los cuadros */
+}
+
+.servicio:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para la imagen (centrada verticalmente) */
+.servicio img {
+    width: 200px; /* Ajusta según lo que necesites */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px; /* Esquinas ligeramente redondeadas */
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor del texto */
+.servicio-contenido {
+    flex: 1;
+    text-align: justify;
+}
+
+/* 🔹 Footer 🔹 */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    width: 100%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 300px;
+}
+
+/* Redes Sociales */
+.social-icons i {
+    font-size: 24px;
+    margin: 12px; /* Aumentar el margen para más separación */
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #ff9800;
+}
+
+.social-text {
+    font-weight: normal;
+}
+
+/* Mapa */
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* Enlaces */
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block;
+}
+
+.links a:hover {
+    color: #ff9800;
+}
+
+/* Línea de copyright */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+/* 🔹 Responsive Design 🔹 */
+@media screen and (max-width: 768px) {
+    .equipo {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 🔹 Responsive Design para móviles 🔹 */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .question {
+        font-size: 16px;
+    }
+
+    .answer {
+        font-size: 14px;
+    }
+
+    .sobre-nosotros {
+        padding: 30px 10px;
+    }
+
+    .sobre-nosotros h2 {
+        font-size: 26px;
+    }
+
+    .miembro {
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,21 @@
+/* Para pantallas menores a 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduce el tamaño del texto */
+    }
+
+    .contenedor {
+        width: 90%; /* Evita que los elementos sean demasiado anchos */
+        margin: 0 auto; /* Centra el contenido */
+    }
+
+    .tarjeta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        max-width: 100%; /* Las imágenes no deben desbordarse */
+        height: auto;
+    }
+}
