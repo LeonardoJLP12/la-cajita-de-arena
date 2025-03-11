@@ -100,6 +100,28 @@ p {
     line-height: 1.4;
 }
 
+.metodos-pago {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e3f2fd;
+}
+
+.metodos-pago h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.metodos-pago h3 {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: normal;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
 /* Header */
 header {
     position: relative;
@@ -225,6 +247,51 @@ nav ul li a:hover {
 .contact-info {
     font-weight: bold;
 } 
+
+
+/* WhatsApp boton*/
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-float img {
+    width: 40px;
+    height: 40px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+/* Metodos de pago */
+.metodos-pago {
+    text-align: center;
+    padding: 20px;
+}
+
+.pagos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.pagos img {
+    width: 80px;
+    height: auto;
+}
 
 
 /* 🔹 Footer 🔹 */
