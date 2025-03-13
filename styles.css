@@ -262,7 +262,7 @@ button:hover {
     height: 400px;
     border-radius: 50%; /* Hace la imagen circular */
     object-fit: cover; /* Ajusta la imagen para que no se deforme */
-    border: 5px solid #88bbcc; /* Un borde opcional en celeste */
+    border: 5px solid #53add1; /* Un borde opcional en celeste */
 }
 
 .info-miss {
@@ -290,7 +290,7 @@ button:hover {
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid #00b8ff;
+    border: 5px solid #53add1;
 }
 
 .texto-presentacion {
@@ -320,7 +320,7 @@ button:hover {
 .caja-resaltada {
     background-color: #f0f8ff;
     padding: 15px;
-    border-left: 5px solid #00b8ff;
+    border-left: 5px solid #53add1;
     margin-top: 15px;
     font-size: 16px;
 }
