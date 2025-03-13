@@ -544,7 +544,7 @@ button:hover {
 
 .container {
     display: flex;
-    flex-direction: row; /* Horizontal por defecto */
+    flex-direction: column !important; /* Horizontal por defecto */
     align-items: center;
     gap: 20px; /* Espacio entre imagen y texto */
 }
@@ -561,57 +561,78 @@ button:hover {
     min-width: 250px; /* Evita que el texto se comprima demasiado */
 }
 
-/* Responsive para tablets (pantallas de hasta 1024px) */
+/* Estilos Responsive */
 @media (max-width: 1024px) {
-    .container {
-        flex-direction: column; /* Cambia a vertical */
-        align-items: center; 
-        text-align: center; 
-    }
-    .img-circular {
-        width: 140px;
-        height: 140px;
-        display: block;
-        margin: 0 auto;
-    }
-    .card {
-        width: 80%;
-    }
-}
-
-/* Responsive para teléfonos (pantallas de hasta 768px) */
-@media (max-width: 768px) {
-    .container {
+    .presentacion {
         flex-direction: column;
         text-align: center;
     }
-    h1 {
-        font-size: 2rem;
+
+    .foto-circular {
+        width: 300px;
+        height: 300px;
     }
-    .img-circular {
-        width: 120px;
-        height: 120px;
+
+    .info-miss {
+        max-width: 90%;
+        text-align: center;
     }
-    .card {
-        width: 90%;
-        padding: 10px;
+
+    .carrusel-contenedor img {
+        height: 300px;
     }
 }
 
-/* Responsive para móviles pequeños (hasta 480px) */
-@media (max-width: 480px) {
-    .container {
+@media (max-width: 768px) {
+    /* Convertir navegación en menú de columna */
+    nav ul {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Servicios en columna */
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustar textos */
     h1 {
-        font-size: 1.8rem;
+        font-size: 22px;
     }
-    .img-circular {
-        width: 100px;
-        height: 100px;
+
+    h2 {
+        font-size: 18px;
     }
-    .card {
-        width: 95%;
-        padding: 8px;
+
+    p {
+        font-size: 14px;
+    }
+
+    /* Ajustar carrusel */
+    .carrusel-contenedor img {
+        height: 250px;
+    }
+
+    /* WhatsApp botón más pequeño */
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
     }
 }
