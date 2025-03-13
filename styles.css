@@ -542,11 +542,37 @@ button:hover {
     padding-top: 10px;
 }
 
+.container {
+    display: flex;
+    flex-direction: row; /* Horizontal por defecto */
+    align-items: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.img-circular {
+    width: 150px; /* Ajusta el tamaño si es necesario */
+    height: 150px;
+    border-radius: 50%;
+    flex-shrink: 0; /* Evita que la imagen se haga más pequeña en pantallas pequeñas */
+}
+
+.text-content {
+    flex: 1; /* Hace que el texto use el espacio restante */
+    min-width: 250px; /* Evita que el texto se comprima demasiado */
+}
+
 /* Responsive para tablets (pantallas de hasta 1024px) */
 @media (max-width: 1024px) {
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambia a vertical */
+        align-items: center; 
+        text-align: center; 
+    }
+    .img-circular {
+        width: 140px;
+        height: 140px;
+        display: block;
+        margin: 0 auto;
     }
     .card {
         width: 80%;
@@ -555,6 +581,10 @@ button:hover {
 
 /* Responsive para teléfonos (pantallas de hasta 768px) */
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
     h1 {
         font-size: 2rem;
     }
@@ -566,8 +596,22 @@ button:hover {
         width: 90%;
         padding: 10px;
     }
-    .button {
-        width: 100%;
-        padding: 12px;
+}
+
+/* Responsive para móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .img-circular {
+        width: 100px;
+        height: 100px;
+    }
+    .card {
+        width: 95%;
+        padding: 8px;
     }
 }
