@@ -57,6 +57,23 @@ header .overlay:hover {
     background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
 }
 
+/* Estilos para la barra negra con la dirección */
+.header-info {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Espaciado entre el texto de dirección y los iconos */
+.header-info p {
+    margin-bottom: 10px; /* Agrega espacio entre el texto y las redes sociales */
+}
+
 .logo {
     width: 100px; /* Ajusta el tamaño del logo */
     margin-bottom: 10px;
@@ -162,6 +179,8 @@ nav ul li a:hover {
 }
 
 .social-icons a {
+    color: white;
+    font-size: 20px;
     text-decoration: none;
 }
 
@@ -174,6 +193,12 @@ nav ul li a:hover {
 
 .social-icons i:hover {
     color: #88bbcc; /* Azul claro al pasar el mouse */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaciado entre iconos */
 }
 
 /*Carrusel */
@@ -517,28 +542,32 @@ button:hover {
     padding-top: 10px;
 }
 
-/* 🔹 Responsive Design para móviles 🔹 */
-@media screen and (max-width: 600px) {
+/* Responsive para tablets (pantallas de hasta 1024px) */
+@media (max-width: 1024px) {
     .container {
-        width: 95%; /* Asegura que no haya scroll horizontal */
-        margin: 20px auto;
-        padding: 15px;
+        flex-direction: column;
+        align-items: center;
     }
+    .card {
+        width: 80%;
+    }
+}
 
+/* Responsive para teléfonos (pantallas de hasta 768px) */
+@media (max-width: 768px) {
     h1 {
-        font-size: 20px;
+        font-size: 2rem;
     }
-
-    .question {
-        font-size: 16px;
+    .img-circular {
+        width: 120px;
+        height: 120px;
     }
-
-    .answer {
-        font-size: 14px;
+    .card {
+        width: 90%;
+        padding: 10px;
     }
-
-    footer {
-        font-size: 14px;
-        padding: 15px;
+    .button {
+        width: 100%;
+        padding: 12px;
     }
 }
