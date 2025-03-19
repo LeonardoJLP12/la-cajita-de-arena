@@ -122,18 +122,21 @@ nav {
     background-color: #000000; 
     padding: 10px 0;
     width: 100%;
-    text-align: center;
     display: flex;
-    justify-content: center; /* Centra los elementos */
-    gap: 20px; /* Espacio entre enlaces */
-    flex-wrap: wrap; /* Si es necesario, permite que bajen de línea */
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Evita que los enlaces bajen de línea */
+    overflow-x: auto; /* Permite hacer scroll si es necesario */
+    white-space: nowrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    white-space: nowrap; /* Evita que los enlaces se partan en varias líneas */
+    padding: 5px 10px;
+    display: inline-block;
 }
 
 nav ul {
@@ -664,7 +667,7 @@ img {
 }
 
 /* Responsive Tablet Cel grande*/
-@media screen and (min-width: 320px) and (max-width: 425px)  {
+@media screen and (max-width: 600px)  {
 
             .top-bar {
                 flex-direction: column; 
@@ -694,7 +697,8 @@ img {
             }
 
             nav {
-                flex-wrap: nowrap; 
+                gap: 10px; 
+                font-size: 14px;
             }
 
             nav a { 
