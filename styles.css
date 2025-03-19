@@ -708,7 +708,11 @@ img {
                 white-space: nowrap;
                 letter-spacing: -0.5px;
             }
-            
+
+            nav a:last-child {
+                margin-right: -5px; /* Ajusta según lo necesites */
+            }
+
             .overlay h1 {
                 font-size: 22px;
             }
