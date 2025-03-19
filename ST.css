@@ -8,10 +8,14 @@ body {
 
 /* Estilo del encabezado */
 header {
-    background-color: #88bbcc;
-    color: white;
+    background-color: #88bbcc; /* Color de fondo */
+    padding: 4px 0; /* Espaciado interno */
     text-align: center;
-    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0; /* Elimina cualquier margen */
+    position: relative; /* Asegura que no afecte el flujo */
 }
 
 .soporte-texto {

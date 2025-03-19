@@ -41,6 +41,17 @@ footer p {
     color: white !important;
 }
 
+.privacidad {
+    background-color: #88bbcc; /* Color de fondo */
+    padding: 18px 0; /* Espaciado interno */
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0; /* Elimina cualquier margen */
+    position: relative; /* Asegura que no afecte el flujo */
+}
+
 /* 🔹 Responsive Design para móviles 🔹 */
 @media screen and (max-width: 600px) {
     .container {
