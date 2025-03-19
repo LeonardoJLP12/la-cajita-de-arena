@@ -652,8 +652,8 @@ img {
     min-width: 250px; /* Evita que el texto se comprima demasiado */
 }
 
-/* Responsive */
- @media (max-width: 768px) {
+/* Responsive Tablet Cel grande*/
+ @media screen and (min-width: 426px) and (max-width: 768px) {
 
             .top-bar {
                 flex-direction: column; 
@@ -683,7 +683,7 @@ img {
             }
 
             nav a { 
-                font-size: 17px;
+                font-size: 15px;
             }
             
             .overlay h1 {
@@ -702,21 +702,27 @@ img {
                 grid-template-columns: repeat(2, 1fr); /* 1 columna */
             }
 }
-
-@media (max-width: 425px) {
+/* Responsive Celular */
+@media screen and (min-width: 320px) and (max-width: 425px) {
 
             .top-bar {
-                padding: 12px; 
-                font-size: 12px; 
+                flex-direction: column; 
+                text-align: center;
+                padding: 10px;
             }
-        
+
             .contact-info {
-                font-size: 14px; 
+                margin-bottom: 10px; 
             }
-        
+
+            .social-icons {
+                display: flex;
+                justify-content: center; 
+                gap: 15px;
+            }
+
             .social-icons a {
-                font-size: 16px; 
-                gap: 10px; 
+                font-size: 18px; 
             }
 
             .lista-menu ul {
@@ -739,7 +745,7 @@ img {
             }
 
             .overlay h1 {
-                font-size: 18px;
+                font-size: 22px;
             }
         
             .overlay h3 {
