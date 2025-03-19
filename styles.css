@@ -653,7 +653,7 @@ img {
 }
 
 /* Responsive Tablet Cel grande*/
- @media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
             .top-bar {
                 flex-direction: column; 
