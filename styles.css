@@ -705,6 +705,8 @@ img {
             nav a { 
                 font-size: 13px;
                 padding: 3px 5px;
+                white-space: nowrap;
+                letter-spacing: -0.5px;
             }
             
             .overlay h1 {
