@@ -694,7 +694,7 @@ img {
             }
 
             nav {
-                flex-wrap: nowrap; /* Evita que los enlaces bajen de línea */
+                flex-wrap: nowrap; 
             }
 
             nav a { 
@@ -748,8 +748,13 @@ img {
                 gap: 5px;
             }
 
+            nav {
+                flex-wrap: nowrap; 
+            }
+
             nav a { 
                 font-size: 15px;
+                padding: 3px;
             }
 
             h1 {
