@@ -693,8 +693,13 @@ img {
                 gap: 10px;
             }
 
+            nav {
+                flex-wrap: nowrap; /* Evita que los enlaces bajen de línea */
+            }
+
             nav a { 
                 font-size: 16px;
+                padding: 3px;
             }
             
             .overlay h1 {
