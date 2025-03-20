@@ -54,7 +54,7 @@ h1 {
 /* Ajuste del Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     background: #333;
     color: white;
     margin-top: auto;
@@ -62,7 +62,7 @@ footer {
 }
 
 footer p {
-    font-size: 18px; /* Aumenta el tamaño del texto */
+    font-size: 17px; /* Aumenta el tamaño del texto */
     font-weight: bold;
 }
 
@@ -118,6 +118,6 @@ a {
     }
 
     footer p {
-        font-size: 16px; /* Ajustar tamaño en móviles */
+        font-size: 13px; /* Ajustar tamaño en móviles */
     }
 }
