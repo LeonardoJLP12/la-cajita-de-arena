@@ -70,14 +70,6 @@ p {
     line-height: 1.5;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 .sobre-nosotros {
     text-align: center;
     padding: 40px 20px;
@@ -366,61 +358,6 @@ nav ul li a:hover {
     padding-top: 10px;
 }
 
-/* 🔹 Responsive Design 🔹 */
-@media screen and (max-width: 768px) {
-    .equipo {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* 🔹 Responsive Design para móviles 🔹 */
-@media screen and (max-width: 600px) {
-    .container {
-        width: 95%;
-        margin: 20px auto;
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .question {
-        font-size: 16px;
-    }
-
-    .answer {
-        font-size: 14px;
-    }
-
-    .sobre-nosotros {
-        padding: 30px 10px;
-    }
-
-    .sobre-nosotros h2 {
-        font-size: 26px;
-    }
-
-    .miembro {
-        width: 90%;
-    }
-
-    .footer-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-    }
-
-    footer {
-        font-size: 14px;
-        padding: 15px;
-    }
-}
-
 /* WhatsApp boton*/
 .whatsapp-float {
     position: fixed;
@@ -446,3 +383,106 @@ nav ul li a:hover {
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
+
+/* 🔹 Responsive Design 🔹 */
+@media screen and (max-width: 600px)  {
+
+    .top-bar {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px; 
+    }
+
+    .lista-menu ul {
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        gap: 10px;
+    }
+
+    nav {
+        gap: 5px; 
+        padding: 5px 0;
+        font-size: 14px;
+    }
+
+    nav a { 
+        font-size: 12px;
+        padding: 3px 3px;
+        white-space: nowrap;
+        letter-spacing: -0.5px;
+    }
+
+    nav a:last-child {
+        margin-right: -4px; /* Ajusta según lo necesites */
+    }
+
+    .overlay h1 {
+        font-size: 22px;
+    }
+
+    .overlay h3 {
+        font-size: 16px;
+    }
+
+}
+
+/* 🔹 Responsive Design para móviles 🔹 */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+
+    .top-bar {
+        flex-direction: column; 
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px; 
+    }
+
+    .lista-menu ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 5px;
+    }
+
+    nav {
+        flex-wrap: nowrap; 
+    }
+
+    nav a { 
+        font-size: 15px;
+        padding: 3px;
+        letter-spacing: -0.5px;
+    }
+
+    nav a:last-child {
+        margin-right: -4px; /* Ajusta según lo necesites */
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h1 span {
+        display: block;
+    }
+
+    .overlay h1 {
+        font-size: 22px;
+    }
+
+    .overlay h3 {
+        font-size: 16px;
+    }
+
+    .logo {
+        width: 100px; 
+    }
+    
+}        
