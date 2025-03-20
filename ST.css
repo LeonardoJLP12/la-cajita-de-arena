@@ -97,24 +97,89 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* 🔹 Responsive Design para móviles 🔹 */
+/* Para pantallas de hasta 600px */
 @media screen and (max-width: 600px) {
     .contact-form {
         width: 90%;
-        margin: 20px auto;
         padding: 15px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
     }
 
-    header h1 {
+    .contact-form h2 {
         font-size: 20px;
+        text-align: center;
     }
 
-    .soporte-texto {
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .btn-enviar {
         font-size: 18px;
+        padding: 12px;
+        width: 100%;
     }
 
     footer {
-        font-size: 14px;
+        position: relative; 
+        text-align: center;
         padding: 15px;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 14px;
     }
 }
+
+/* Para pantallas entre 320px y 425px (celulares pequeños) */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    .contact-form {
+        width: 95%;
+        padding: 10px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-form h2 {
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    .btn-enviar {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    footer {
+        position: relative;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
