@@ -142,6 +142,7 @@ footer a:hover {
 
     footer p {
         font-size: 14px;
+        padding: 15px;
     }
 }
 
@@ -189,7 +190,8 @@ footer a:hover {
     }
 
     footer p {
-        font-size: 12px;
+        font-size: 14px;
+        padding: 15px;
     }
 }
 
