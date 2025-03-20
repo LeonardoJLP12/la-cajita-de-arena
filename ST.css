@@ -109,6 +109,11 @@ footer a:hover {
         align-items: center;
     }
 
+    header h1 {
+        font-size: 23px;
+        padding: 3px 0; 
+    }
+
     .contact-form h2 {
         font-size: 20px;
         text-align: center;
@@ -152,6 +157,11 @@ footer a:hover {
         align-items: center;
     }
 
+    header h1 {
+        font-size: 25px; /* Aún más pequeño en pantallas muy reducidas */
+        padding: 3px 0;
+    }
+
     .contact-form h2 {
         font-size: 20px;
         align-items: center;
@@ -170,7 +180,7 @@ footer a:hover {
         padding: 10px;
         width: 100%;
     }
-    
+
     footer {
         position: relative;
         text-align: center;
