@@ -429,6 +429,33 @@ nav ul li a:hover {
         font-size: 16px;
     }
 
+    .servicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 90%;
+        border: 1px solid #ccc; /* Solo para ver si toma el estilo */
+        padding: 10px;
+    }
+
+    .servicio img {
+        order: 2!important;
+        max-width: 90%!important;
+        height: auto!important;
+    }
+
+    .servicio h2 {
+        order: 1!important ;
+        font-size: 20px!important ;
+    }
+
+    .servicio p {
+        order: 3!important;
+        width: 90%!important;
+        font-size: 14px!important;
+    }
+
 }
 
 /* 🔹 Responsive Design para móviles 🔹 */
@@ -484,5 +511,30 @@ nav ul li a:hover {
     .logo {
         width: 100px; 
     }
+
+    .servicio {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+
+    .servicio img {
+        order: 2 !important;
+        max-width: 90% !important;
+        height: auto !important;
+    }
+
+    .servicio h2 {
+        order: 1 !important;
+        font-size: 20px !important;
+    }
+
+    .servicio p {
+        order: 3 !important;
+        width: 90% !important;
+        font-size: 14px !important;
+    }
+
     
 }        
