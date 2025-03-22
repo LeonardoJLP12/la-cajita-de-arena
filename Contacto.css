@@ -360,6 +360,23 @@ nav ul li a:hover {
     padding-top: 10px;
 }
 
+.pagos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    gap: 15px; /* Espacio entre las imágenes */
+    justify-content: center;
+    align-items: center;
+    max-width: 400px; 
+    margin: auto;
+}
+
+.pagos img {
+    width: 100%; /* Ajusta el tamaño de las imágenes */
+    max-width: 80px; /* Tamaño máximo por imagen */
+    height: auto;
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
 /* 🔹 Responsive Design 🔹 */
 @media screen and (max-width: 600px)  {
 
