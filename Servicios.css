@@ -456,6 +456,22 @@ nav ul li a:hover {
         font-size: 14px!important;
     }
 
+    h2 {
+        text-align: center;
+    }
+    .servicio p:last-of-type::after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    .servicio p:last-of-type {
+        margin-bottom: 15px; /* Ajusta el espacio entre el texto y la imagen */
+    }
+    .servicio img {
+        display: block;
+        margin: 10px auto 0; /* Asegura que la imagen tenga espacio arriba y esté centrada */
+    }
+
 }
 
 /* 🔹 Responsive Design para móviles 🔹 */
@@ -534,6 +550,22 @@ nav ul li a:hover {
         order: 3 !important;
         width: 90% !important;
         font-size: 14px !important;
+    }
+
+    h2 {
+        text-align: center;
+    }
+    .servicio p:last-of-type::after {
+        content: "\A";
+        white-space: pre;
+    }
+
+    .servicio p:last-of-type {
+        margin-bottom: 15px; /* Ajusta el espacio entre el texto y la imagen */
+    }
+    .servicio img {
+        display: block;
+        margin: 10px auto 0; /* Asegura que la imagen tenga espacio arriba y esté centrada */
     }
 
     
