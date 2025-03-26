@@ -411,7 +411,7 @@ nav ul li a:hover {
     }
 
     nav a:last-child {
-        margin-right: -4px; /* Ajusta según lo necesites */
+        margin-right: -4px;
     }
 
     .overlay h1 {
@@ -420,6 +420,26 @@ nav ul li a:hover {
 
     .overlay h3 {
         font-size: 16px;
+    }
+
+    /* 🔹 Ajuste de imágenes de pago en cuadrícula 🔹 */
+    .pagos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 10px; /* Espaciado entre imágenes */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Centra el grid */
+        max-width: 250px; /* Ajuste opcional */
+    }
+
+    .pagos img {
+        width: 100%;
+        max-width: 120px; 
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
     }
 
 }
@@ -455,7 +475,7 @@ nav ul li a:hover {
     }
 
     nav a:last-child {
-        margin-right: -4px; /* Ajusta según lo necesites */
+        margin-right: -4px;
     }
 
     h1 {
@@ -477,5 +497,25 @@ nav ul li a:hover {
     .logo {
         width: 100px; 
     }
-    
-}        
+
+    /* 🔹 Ajuste de imágenes de pago en cuadrícula 🔹 */
+    .pagos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 8px; /* Espaciado */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    .pagos img {
+        width: 100%;
+        max-width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+}
