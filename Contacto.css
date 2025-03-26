@@ -360,21 +360,24 @@ nav ul li a:hover {
     padding-top: 10px;
 }
 
-.pagos {
+.pagos { 
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    gap: 15px; /* Espacio entre las imágenes */
-    justify-content: center;
+    gap: 15px; /* Aumenta el espacio entre imágenes */
+    justify-content: center; 
     align-items: center;
-    max-width: 400px; 
-    margin: auto;
+    margin: 0 auto; /* Centra el grid */
+    max-width: 280px; /* Ajuste opcional para evitar que se vea muy compacto */
+    text-align: center; /* Asegura que el contenido esté alineado */
 }
 
 .pagos img {
-    width: 100%; /* Ajusta el tamaño de las imágenes */
-    max-width: 80px; /* Tamaño máximo por imagen */
+    width: 100%;
+    max-width: 100px; /* Reduce un poco el tamaño para más equilibrio */
     height: auto;
-    border-radius: 10px; /* Opcional: bordes redondeados */
+    display: block;
+    margin: auto; /* Centra las imágenes */
+    border-radius: 8px; /* Suaviza las esquinas */
 }
 
 /* 🔹 Responsive Design 🔹 */
