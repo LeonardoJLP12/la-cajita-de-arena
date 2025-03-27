@@ -281,10 +281,19 @@ nav ul li a:hover {
 }
 
 .pagos img {
-    width: 80px;
+    width: 100%;
+    max-width: 100px; 
     height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
+.pagos img:hover {
+    transform: scale(1.05);  /* Hace un pequeño zoom */
+    transition: transform 0.3s ease-in-out;
+}
 
 /* 🔹 Footer 🔹 */
 .footer {
