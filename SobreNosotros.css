@@ -405,18 +405,6 @@ nav ul li a:hover {
     .overlay h3 {
         font-size: 16px;
     }
-
-    /* Ajuste para las imágenes en el equipo */
-    .equipo {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Mostrar 2 por fila */
-        gap: 20px;
-    }
-
-    .miembro {
-        width: 100%; /* Asegurarse de que no haya ancho fijo */
-    }
-
 }
 
 /* 🔹 Responsive Design para móviles 🔹 */
@@ -472,6 +460,5 @@ nav ul li a:hover {
     .logo {
         width: 100px; 
     }
-    
 }        
 
