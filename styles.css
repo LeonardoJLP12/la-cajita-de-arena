@@ -596,6 +596,10 @@ html, body {
     padding: 10px 10px;
 }
 
+.footer p {
+    margin-top: 5px; /* Ajusta este valor para reducir el espacio dentro del footer */
+  }
+
 /* Contenedor principal con alineación central */
 .footer-container {
     display: flex;
@@ -692,8 +696,8 @@ img {
 }
 
 .evaluacion {
-    text-align: center;
-    margin: 30px auto 10px;
+    text-align: justify;
+    margin: 30px auto 3px;
     padding: 20px;
     max-width: 900px;
   }
@@ -703,6 +707,15 @@ img {
     font-weight: bold;
     color: #333;
     line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 10px; /* Ajusta este valor para reducir el espacio entre el texto y el footer */
+  }
+  
+  /* Estilo adicional para los párrafos dentro del footer */
+  footer p {
+    margin-top: 10px; /* Ajusta el margen superior de los párrafos en el footer */
   }
   
 
@@ -781,8 +794,11 @@ img {
                 font-size: 1rem;
                 text-align: justify;
               }
+              .evaluacion {
+                text-align: justify;  /* Justificar el texto en pantallas pequeñas */
+              }
               .evaluacion p {
-                font-size: 1.4rem;
+                font-size: 1.7rem;
                 padding: 0 10px;
               }
 }
@@ -865,8 +881,13 @@ img {
                 font-size: 1.05rem;
                 text-align: justify;
               }
+              
+              .evaluacion {
+                text-align: justify;  /* Justificar el texto en pantallas pequeñas */
+              }
+
               .evaluacion p {
-                font-size: 1.2rem;
+                font-size: 1.7rem;
                 padding: 0 15px;
               }
 }        
