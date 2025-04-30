@@ -92,6 +92,20 @@ p {
     line-height: 1.4;
 }
 
+.evaluacion {
+    text-align: justify;
+    margin: 30px auto 3px;
+    padding: 20px;
+    max-width: 900px;
+  }
+  
+  .evaluacion p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+  }
+
 /* Header */
 header {
     position: relative;
