@@ -58,3 +58,509 @@
 .btn-primary:hover {
     background-color: #3f8dba;
 }
+/* Redes Sociales */
+.social-icons i {
+    font-size: 24px;
+    margin: 8px;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #ff9800;
+}
+
+.social-text {
+    font-weight: normal;
+}
+
+/* Mapa */
+.map iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+}
+
+/* Enlaces */
+.links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+    display: block; /* Cada enlace en una línea */
+}
+
+.links a:hover {
+    color: #ff9800;
+}
+
+/* Línea de copyright */
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    flex-direction: column; /* Asegurar que el contenido esté en columna */
+    width: 100%;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px; /* Añadir espacio a los lados */
+}
+
+img {
+    max-width: 100%; /* Evita que las imágenes sobrepasen la pantalla */
+    height: auto;
+}
+
+
+.img-circular {
+    width: 150px; /* Ajusta el tamaño si es necesario */
+    height: 150px;
+    border-radius: 50%;
+    flex-shrink: 0; /* Evita que la imagen se haga más pequeña en pantallas pequeñas */
+}
+
+.text-content {
+    flex: 1; /* Hace que el texto use el espacio restante */
+    min-width: 250px; /* Evita que el texto se comprima demasiado */
+}
+
+.evaluacion {
+    text-align: justify;
+    margin: 30px auto 3px;
+    padding: 20px;
+    max-width: 900px;
+  }
+  
+  .evaluacion p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 10px; /* Ajusta este valor para reducir el espacio entre el texto y el footer */
+  }
+  
+  /* Estilo adicional para los párrafos dentro del footer */
+  footer p {
+    margin-top: 10px; /* Ajusta el margen superior de los párrafos en el footer */
+  }
+  
+
+/* Responsive para pantallas grandes (más de 1200px) */
+@media screen and (min-width: 1200px) {
+    /* Estilos para pantallas de escritorio grandes */
+}
+
+/* Responsive para pantallas medianas (más de 1024px y hasta 1200px) */
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    /* Estilos para pantallas medianas (como tabletas grandes y escritorios pequeños) */
+    .top-bar {
+        flex-direction: row;
+        text-align: left;
+        padding: 20px;
+    }
+
+    .social-icons a {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .overlay h1 {
+        font-size: 28px;
+    }
+
+    .overlay h3 {
+        font-size: 20px;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 2 columnas */
+        gap: 20px;
+    }
+}
+
+/* Responsive para pantallas de 768px a 1024px (tabletas y pantallas medianas) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .contact-info {
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 10px;
+        padding: 12px 0;
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px 7px;
+    }
+
+    .overlay h1 {
+        font-size: 26px;
+    }
+
+    .overlay h3 {
+        font-size: 18px;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 20px;
+    }
+
+    .mision, .vision {
+        padding: 15px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.7rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .evaluacion p {
+        font-size: 1.7rem;
+        padding: 0 15px;
+    }
+}
+
+/* Responsive para pantallas de 600px a 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: row;  /* Cambiar a 'row' para que se alineen horizontalmente */
+        justify-content: space-between; /* Asegura que el contenido esté distribuido */
+        text-align: left;  /* Alinea el texto a la izquierda */
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px; /* Mayor espacio entre los iconos */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Aumentar el tamaño de los iconos para mejorar la visibilidad */
+    }
+
+    /* Lista de menú */
+    .lista-menu ul {
+        flex-direction: row; /* Cambiar a horizontal para pantallas más grandes */
+        gap: 15px; /* Aumentar el espacio entre los elementos del menú */
+        justify-content: center;  /* Centrar los elementos en la lista */
+    }
+
+    /* Estilos de la barra de navegación */
+    nav {
+        gap: 12px; /* Aumentar el espacio entre los elementos del menú */
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 5px 8px; /* Aumentar el padding para los enlaces */
+    }
+
+    /* Overlay */
+    .overlay h1 {
+        font-size: 26px; /* Aumentar el tamaño del título */
+    }
+
+    .overlay h3 {
+        font-size: 18px; /* Ajuste del subtítulo */
+    }
+
+    /* Contenedor de servicios */
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Dos columnas para pantallas más grandes */
+        gap: 20px; /* Aumentar el espacio entre los elementos */
+    }
+
+    .mision, .vision {
+        padding: 15px; /* Aumentar el padding de los contenedores */
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.7rem; /* Aumentar el tamaño de los subtítulos */
+    }
+
+    .mision p, .vision p {
+        font-size: 1.1rem; /* Aumentar el tamaño del texto */
+        text-align: justify;
+    }
+
+    /* Evaluación */
+    .evaluacion p {
+        font-size: 1.7rem;
+        padding: 0 15px;
+    }
+}
+
+
+/* Responsive para pantallas de 425px a 600px */
+@media screen and (min-width: 425px) and (max-width: 600px) {
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 6px;
+        padding: 6px 0;
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .overlay h1 {
+        font-size: 22px;
+    }
+
+    .overlay h3 {
+        font-size: 14px;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 10px;
+    }
+
+    .mision, .vision {
+        padding: 10px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.3rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .evaluacion p {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+}
+
+/* Responsive para pantallas ultra pequeñas (320px a 425px) */
+@media screen and (min-width: 320px) and (max-width: 425px) {
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 14px;
+    }
+
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    nav {
+        gap: 5px;
+        padding: 5px 0;
+        font-size: 12px;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .overlay h1 {
+        font-size: 20px;
+    }
+
+    .overlay h3 {
+        font-size: 12px;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 8px;
+    }
+
+    .mision, .vision {
+        padding: 8px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.2rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 0.9rem;
+        text-align: justify;
+    }
+
+    .evaluacion p {
+        font-size: 1.4rem;
+        padding: 0 8px;
+    }
+}
+
+/* Responsive para pantallas muy pequeñas (menos de 320px) */
+@media screen and (max-width: 320px) {
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .contact-info {
+        margin-bottom: 5px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .social-icons a {
+        font-size: 12px;
+    }
+
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    nav {
+        gap: 4px;
+        padding: 4px 0;
+        font-size: 10px;
+    }
+
+    nav a {
+        font-size: 8px;
+        padding: 3px 4px;
+    }
+
+    .overlay h1 {
+        font-size: 18px;
+    }
+
+    .overlay h3 {
+        font-size: 10px;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 6px;
+    }
+
+    .mision, .vision {
+        padding: 6px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
+    .evaluacion p {
+        font-size: 1.2rem;
+        padding: 0 6px;
+    }
+}
