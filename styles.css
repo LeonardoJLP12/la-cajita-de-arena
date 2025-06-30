@@ -719,175 +719,337 @@ img {
   }
   
 
-/* Responsive Tablet Cel grande*/
-@media screen and (max-width: 600px)  {
+/* Responsive para pantallas de 768px */
+@media screen and (max-width: 768px) {
 
-            .top-bar {
-                flex-direction: column; 
-                text-align: center;
-                padding: 10px;
-            }
+    /* Barra superior */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
 
-            .contact-info {
-                margin-bottom: 10px; 
-            }
+    /* Información de contacto */
+    .contact-info {
+        margin-bottom: 15px;
+    }
 
-            .social-icons {
-                display: flex;
-                justify-content: center; 
-                gap: 15px;
-            }
+    /* Iconos de redes sociales */
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
 
-            .social-icons a {
-                font-size: 18px; 
-            }
+    .social-icons a {
+        font-size: 22px;
+    }
 
-            .lista-menu ul {
-                flex-direction: row;
-                flex-wrap: wrap; 
-                justify-content: center; 
-                gap: 10px;
-            }
+    /* Menú */
+    .lista-menu ul {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
 
-            nav {
-                gap: 5px; 
-                padding: 5px 0;
-                font-size: 14px;
-            }
+    nav {
+        gap: 15px;
+        padding: 15px 0;
+        font-size: 17px;
+    }
 
-            nav a { 
-                font-size: 12px;
-                padding: 3px 3px;
-                white-space: nowrap;
-                letter-spacing: -0.5px;
-            }
+    nav a {
+        font-size: 15px;
+        padding: 5px 8px;
+    }
 
-            nav a:last-child {
-                margin-right: -4px; /* Ajusta según lo necesites */
-            }
+    nav a:last-child {
+        margin-right: -6px;
+    }
 
-            .overlay h1 {
-                font-size: 22px;
-            }
-        
-            .overlay h3 {
-                font-size: 16px;
-            }
+    /* Encabezado overlay */
+    .overlay h1 {
+        font-size: 28px;
+    }
 
-            .servicio {
-                width: 100%;
-            }
+    .overlay h3 {
+        font-size: 20px;
+    }
 
-            .servicios-container {
-                grid-template-columns: repeat(2, 1fr); /* 1 columna */
-            }
+    /* Servicios */
+    .servicio {
+        width: 48%;
+    }
 
-            .mision, .vision {
-                padding: 15px;
-              }
-              
-              .mision h2, .vision h2 {
-                font-size: 1.6rem;
-              }
-            
-              .mision p, .vision p {
-                font-size: 1rem;
-                text-align: justify;
-              }
-              .evaluacion {
-                text-align: justify;  /* Justificar el texto en pantallas pequeñas */
-              }
-              .evaluacion p {
-                font-size: 1.7rem;
-                padding: 0 10px;
-              }
+    .servicios-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+        gap: 30px;
+    }
+
+    /* Misión y Visión */
+    .mision, .vision {
+        padding: 20px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.8rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1.1rem;
+        text-align: justify;
+    }
+
+    /* Evaluación */
+    .evaluacion p {
+        font-size: 1.8rem;
+        padding: 0 20px;
+    }
 }
-/* Responsive Celular */
-@media screen and (min-width: 320px) and (max-width: 425px) {
 
-            .top-bar {
-                flex-direction: column; 
-                text-align: center;
-                padding: 10px;
-            }
+/* Responsive para pantallas de 600px */
+@media screen and (max-width: 600px) {
 
-            .contact-info {
-                margin-bottom: 10px; 
-            }
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
 
-            .social-icons {
-                display: flex;
-                justify-content: center; 
-                gap: 15px;
-            }
+    .contact-info {
+        margin-bottom: 15px;
+    }
 
-            .social-icons a {
-                font-size: 18px; 
-            }
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
 
-            .lista-menu ul {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center; 
-                gap: 5px;
-            }
+    .social-icons a {
+        font-size: 20px;
+    }
 
-            nav {
-                flex-wrap: nowrap; 
-            }
+    /* Menú */
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-            nav a { 
-                font-size: 15px;
-                padding: 3px;
-            }
+    nav {
+        gap: 10px;
+        padding: 12px 0;
+        font-size: 16px;
+    }
 
-            h1 {
-                text-align: center;
-            }
-        
-            h1 span {
-                display: block;
-            }
+    nav a {
+        font-size: 14px;
+        padding: 5px 7px;
+    }
 
-            .overlay h1 {
-                font-size: 22px;
-            }
-        
-            .overlay h3 {
-                font-size: 16px;
-            }
-        
-            .logo {
-                width: 100px; 
-            }
+    /* Encabezado overlay */
+    .overlay h1 {
+        font-size: 26px;
+    }
 
-            .servicio {
-                width: 100%;
-            }
+    .overlay h3 {
+        font-size: 18px;
+    }
 
-            .servicios-container {
-                grid-template-columns: repeat(1, 1fr); /* 1 columna */
-            }
+    /* Servicios */
+    .servicio {
+        width: 100%;
+    }
 
-            .mision, .vision {
-                padding: 18px;
-              }
-            
-              .mision h2, .vision h2 {
-                font-size: 1.7rem;
-              }
-            
-              .mision p, .vision p {
-                font-size: 1.05rem;
-                text-align: justify;
-              }
-              
-              .evaluacion {
-                text-align: justify;  /* Justificar el texto en pantallas pequeñas */
-              }
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 20px;
+    }
 
-              .evaluacion p {
-                font-size: 1.7rem;
-                padding: 0 15px;
-              }
-}        
+    /* Misión y Visión */
+    .mision, .vision {
+        padding: 15px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.7rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Evaluación */
+    .evaluacion p {
+        font-size: 1.7rem;
+        padding: 0 15px;
+    }
+}
+
+/* Responsive para pantallas de 425px */
+@media screen and (max-width: 425px) {
+
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+
+    /* Menú */
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 8px;
+        padding: 8px 0;
+        font-size: 15px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+
+    /* Encabezado overlay */
+    .overlay h1 {
+        font-size: 24px;
+    }
+
+    .overlay h3 {
+        font-size: 16px;
+    }
+
+    /* Servicios */
+    .servicio {
+        width: 100%;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 15px;
+    }
+
+    /* Misión y Visión */
+    .mision, .vision {
+        padding: 12px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.5rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Evaluación */
+    .evaluacion p {
+        font-size: 1.6rem;
+        padding: 0 12px;
+    }
+}
+
+/* Responsive para pantallas de 320px */
+@media screen and (max-width: 320px) {
+
+    /* Ajustes generales */
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social-icons a {
+        font-size: 16px;
+    }
+
+    /* Menú */
+    .lista-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        gap: 6px;
+        padding: 6px 0;
+        font-size: 14px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    /* Encabezado overlay */
+    .overlay h1 {
+        font-size: 22px;
+    }
+
+    .overlay h3 {
+        font-size: 14px;
+    }
+
+    /* Servicios */
+    .servicio {
+        width: 100%;
+    }
+
+    .servicios-container {
+        display: grid;
+        grid-template-columns: 1fr; /* 1 columna */
+        gap: 10px;
+    }
+
+    /* Misión y Visión */
+    .mision, .vision {
+        padding: 10px;
+    }
+
+    .mision h2, .vision h2 {
+        font-size: 1.3rem;
+    }
+
+    .mision p, .vision p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    /* Evaluación */
+    .evaluacion p {
+        font-size: 1.5rem;
+        padding: 0 10px;
+    }
+}
