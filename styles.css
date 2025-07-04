@@ -1477,7 +1477,7 @@ img {
         }
 
         nav a {
-            font-size: 10px;
+            font-size: 11px;
             padding: 3px 5px;
         }
 
@@ -1586,7 +1586,7 @@ img {
         }
     }
 
-     @media screen and (min-width: 321px) and (max-width: 362px) {
+    @media screen and (min-width: 321px) and (max-width: 362px) {
     .top-bar {
             flex-direction: column;
             text-align: center;
@@ -1619,7 +1619,7 @@ img {
         }
 
         nav a {
-            font-size: 8px;
+            font-size: 10px;
             padding: 3px 4px;
         }
 

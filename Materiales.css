@@ -38,7 +38,7 @@ header .overlay:hover {
 }
 
 #recursos {
-    background-color: #ffffff;
+    background-color: #e3f2fd;
     padding: 50px 20px;
     text-align: center;
 }
@@ -636,7 +636,7 @@ img {
         }
 
         nav a {
-            font-size: 8px;
+            font-size: 10px;
             padding: 3px 4px;
         }
 
