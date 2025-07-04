@@ -698,560 +698,560 @@ nav ul li a:hover {
     }
 
     .overlay h1 {
-        font-size: 28px;
+            font-size: 28px;
+        }
+
+        .overlay h3 {
+            font-size: 20px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* 2 columnas */
+            gap: 20px;
+        }
+    }
+
+    /* Responsive para pantallas de 768px a 1024px (tabletas y pantallas medianas) */
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        /* Ajustes generales */
+        .top-bar {
+            flex-direction: column;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .contact-info {
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 20px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            gap: 10px;
+            padding: 12px 0;
+            font-size: 16px;
+        }
+
+        nav a {
+            font-size: 14px;
+            padding: 5px 7px;
+        }
+
+        .overlay h1 {
+            font-size: 26px;
+        }
+
+        .overlay h3 {
+            font-size: 18px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna */
+            gap: 20px;
+        }
+
+        .mision, .vision {
+            padding: 15px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1.7rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.7rem;
+            padding: 0 15px;
+        }
+    }
+
+    /* Responsive para pantallas de 600px a 768px */
+    @media screen and (min-width: 600px) and (max-width: 768px) {
+        /* Ajustes generales */
+        .top-bar {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            font-size: 18px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav {
+            gap: 8px;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+
+        nav a {
+            font-size: 13px;
+            padding: 4px 6px;
+        }
+
+        .overlay h1 {
+            font-size: 24px;
+        }
+
+        .overlay h3 {
+            font-size: 16px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna */
+            gap: 15px;
+        }
+
+        .mision, .vision {
+            padding: 12px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1.5rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.6rem;
+            padding: 0 12px;
+        }
+    }
+
+    /* Desde 769px hacia abajo hasta 601px */
+    @media screen and (max-width: 768px) and (min-width: 601px) {
+        /* Ajustes generales */
+        .top-bar {
+            flex-direction: row; /* Alineación horizontal */
+            justify-content: space-between; /* Espaciado entre los elementos */
+            text-align: left; /* Alineación a la izquierda */
+            padding: 10px 20px; /* Ajusta el padding */
+        }
+
+        /* Ajustes en los íconos de redes sociales */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px; /* Más espacio entre los íconos */
+        }
+
+        .social-icons a {
+            font-size: 20px; /* Tamaño de los iconos */
+        }
+
+        /* Ajustes para el menú */
+        .lista-menu ul {
+            display: flex;
+            flex-direction: row; /* Los elementos del menú deben ir en línea */
+            justify-content: center; /* Centra los elementos */
+            gap: 20px; /* Espaciado entre los elementos */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px; /* Espaciado entre los elementos del menú */
+            padding: 8px 0;
+            font-size: 16px;
+        }
+
+        nav a {
+            font-size: 14px; /* Tamaño de los enlaces */
+            padding: 5px 8px; /* Ajuste del padding */
+        }
+
+        /* Ajustes en el overlay */
+        .overlay h1 {
+            font-size: 26px; /* Tamaño del título */
+        }
+
+        .overlay h3 {
+            font-size: 18px; /* Tamaño del subtítulo */
+        }
+
+        /* Contenedor de servicios */
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Dos columnas */
+            gap: 20px; /* Espaciado entre los servicios */
+        }
+
+        .mision, .vision {
+            padding: 15px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1.7rem; /* Ajuste de los títulos */
+        }
+
+        .mision p, .vision p {
+            font-size: 1.1rem; /* Ajuste del tamaño de texto */
+            text-align: justify; /* Alineación del texto */
+        }
+
+        /* Evaluación */
+        .evaluacion p {
+            font-size: 1.7rem;
+            padding: 0 15px;
+        }
+
+        /* Footer */
+        .footer-container {
+            display: flex;
+            flex-direction: row; /* Mantener los elementos en fila */
+            justify-content: space-between; /* Espaciado entre las secciones */
+            padding: 20px;
+            gap: 20px; /* Espacio entre las secciones */
+        }
+
+        .footer-section {
+            flex: 1;
+            padding: 10px;
+            min-width: 250px; /* Ancho mínimo para cada sección */
+        }
+
+        .footer-bottom {
+            font-size: 12px; /* Ajuste del tamaño de la fuente */
+            text-align: center;
+        }
+
+        /* Iconos sociales en el footer */
+        .social-icons i {
+            font-size: 24px;
+            margin: 10px;
+            color: white;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons i:hover {
+            transform: scale(1.2);
+            color: #ff9800;
+        }
+    }
+
+    /* Ajustes para pantallas pequeñas (menos de 601px) */
+    @media screen and (max-width: 600px) {
+        .top-bar {
+            flex-direction: column; /* Alineación vertical para pantallas más pequeñas */
+            text-align: center; /* Centrado del texto */
+            padding: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            font-size: 18px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column; /* Los enlaces deben ir apilados */
+            gap: 10px;
+        }
+
+        nav {
+            gap: 8px;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+
+        nav a {
+            font-size: 13px;
+            padding: 4px 6px;
+        }
+
+        .overlay h1 {
+            font-size: 24px;
+        }
+
+        .overlay h3 {
+            font-size: 16px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Una columna */
+            gap: 15px;
+        }
+
+        .mision, .vision {
+            padding: 12px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1.5rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.6rem;
+            padding: 0 12px;
+        }
+    }
+
+
+
+    /* Responsive para pantallas de 425px a 600px */
+    @media screen and (min-width: 425px) and (max-width: 600px) {
+        /* Ajustes generales */
+        .top-bar {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 15px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            font-size: 16px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav {
+            gap: 6px;
+            padding: 6px 0;
+            font-size: 14px;
+        }
+
+        nav a {
+            font-size: 12px;
+            padding: 4px 6px;
+        }
+
+        .overlay h1 {
+            font-size: 22px;
+        }
+
+        .overlay h3 {
+            font-size: 14px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna */
+            gap: 10px;
+        }
+
+        .mision, .vision {
+            padding: 10px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1.3rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 1rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.5rem;
+            padding: 0 10px;
+        }
+    }
+
+    /* Responsive para pantallas ultra pequeñas (320px a 425px) */
+    @media screen and (min-width: 320px) and (max-width: 425px) {
+        /* Ajustes generales */
+        .top-bar {
+            flex-direction: column;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .contact-info {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            font-size: 14px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        nav {
+            gap: 5px;
+            padding: 5px 0;
+            font-size: 12px;
+        }
+
+        nav a {
+            font-size: 10px;
+            padding: 3px 5px;
+        }
+
+        .overlay h1 {
+            font-size: 20px;
+        }
+
+        .overlay h3 {
+            font-size: 12px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna */
+            gap: 8px;
+        }
+
+        .mision, .vision {
+            padding: 8px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1.2rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 0.9rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.4rem;
+            padding: 0 8px;
+        }
+    }
+
+    /* Responsive para pantallas muy pequeñas (menos de 320px) */
+    @media screen and (max-width: 320px) {
+        /* Ajustes generales */
+        .top-bar {
+            flex-direction: column;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .contact-info {
+            margin-bottom: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .social-icons a {
+            font-size: 12px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        nav {
+            gap: 4px;
+            padding: 4px 0;
+            font-size: 10px;
+        }
+
+        nav a {
+            font-size: 8px;
+            padding: 3px 4px;
+        }
+
+        .overlay h1 {
+            font-size: 18px;
+        }
+
+        .overlay h3 {
+            font-size: 10px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna */
+            gap: 6px;
+        }
+
+        .mision, .vision {
+            padding: 6px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 0.8rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.2rem;
+            padding: 0 6px;
+        }
     }
-
-    .overlay h3 {
-        font-size: 20px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* 2 columnas */
-        gap: 20px;
-    }
-}
-
-/* Responsive para pantallas de 768px a 1024px (tabletas y pantallas medianas) */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Ajustes generales */
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        padding: 15px;
-    }
-
-    .contact-info {
-        margin-bottom: 15px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .social-icons a {
-        font-size: 20px;
-    }
-
-    .lista-menu ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav {
-        gap: 10px;
-        padding: 12px 0;
-        font-size: 16px;
-    }
-
-    nav a {
-        font-size: 14px;
-        padding: 5px 7px;
-    }
-
-    .overlay h1 {
-        font-size: 26px;
-    }
-
-    .overlay h3 {
-        font-size: 18px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr; /* 1 columna */
-        gap: 20px;
-    }
-
-    .mision, .vision {
-        padding: 15px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1.7rem;
-    }
-
-    .mision p, .vision p {
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-    .evaluacion p {
-        font-size: 1.7rem;
-        padding: 0 15px;
-    }
-}
-
-/* Responsive para pantallas de 600px a 768px */
-@media screen and (min-width: 600px) and (max-width: 768px) {
-    /* Ajustes generales */
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contact-info {
-        margin-bottom: 10px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .social-icons a {
-        font-size: 18px;
-    }
-
-    .lista-menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav {
-        gap: 8px;
-        padding: 8px 0;
-        font-size: 15px;
-    }
-
-    nav a {
-        font-size: 13px;
-        padding: 4px 6px;
-    }
-
-    .overlay h1 {
-        font-size: 24px;
-    }
-
-    .overlay h3 {
-        font-size: 16px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr; /* 1 columna */
-        gap: 15px;
-    }
-
-    .mision, .vision {
-        padding: 12px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1.5rem;
-    }
-
-    .mision p, .vision p {
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-    .evaluacion p {
-        font-size: 1.6rem;
-        padding: 0 12px;
-    }
-}
-
-/* Desde 769px hacia abajo hasta 601px */
-@media screen and (max-width: 768px) and (min-width: 601px) {
-    /* Ajustes generales */
-    .top-bar {
-        flex-direction: row; /* Alineación horizontal */
-        justify-content: space-between; /* Espaciado entre los elementos */
-        text-align: left; /* Alineación a la izquierda */
-        padding: 10px 20px; /* Ajusta el padding */
-    }
-
-    /* Ajustes en los íconos de redes sociales */
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px; /* Más espacio entre los íconos */
-    }
-
-    .social-icons a {
-        font-size: 20px; /* Tamaño de los iconos */
-    }
-
-    /* Ajustes para el menú */
-    .lista-menu ul {
-        display: flex;
-        flex-direction: row; /* Los elementos del menú deben ir en línea */
-        justify-content: center; /* Centra los elementos */
-        gap: 20px; /* Espaciado entre los elementos */
-    }
-
-    nav {
-        display: flex;
-        justify-content: center;
-        gap: 12px; /* Espaciado entre los elementos del menú */
-        padding: 8px 0;
-        font-size: 16px;
-    }
-
-    nav a {
-        font-size: 14px; /* Tamaño de los enlaces */
-        padding: 5px 8px; /* Ajuste del padding */
-    }
-
-    /* Ajustes en el overlay */
-    .overlay h1 {
-        font-size: 26px; /* Tamaño del título */
-    }
-
-    .overlay h3 {
-        font-size: 18px; /* Tamaño del subtítulo */
-    }
-
-    /* Contenedor de servicios */
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Dos columnas */
-        gap: 20px; /* Espaciado entre los servicios */
-    }
-
-    .mision, .vision {
-        padding: 15px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1.7rem; /* Ajuste de los títulos */
-    }
-
-    .mision p, .vision p {
-        font-size: 1.1rem; /* Ajuste del tamaño de texto */
-        text-align: justify; /* Alineación del texto */
-    }
-
-    /* Evaluación */
-    .evaluacion p {
-        font-size: 1.7rem;
-        padding: 0 15px;
-    }
-
-    /* Footer */
-    .footer-container {
-        display: flex;
-        flex-direction: row; /* Mantener los elementos en fila */
-        justify-content: space-between; /* Espaciado entre las secciones */
-        padding: 20px;
-        gap: 20px; /* Espacio entre las secciones */
-    }
-
-    .footer-section {
-        flex: 1;
-        padding: 10px;
-        min-width: 250px; /* Ancho mínimo para cada sección */
-    }
-
-    .footer-bottom {
-        font-size: 12px; /* Ajuste del tamaño de la fuente */
-        text-align: center;
-    }
-
-    /* Iconos sociales en el footer */
-    .social-icons i {
-        font-size: 24px;
-        margin: 10px;
-        color: white;
-        transition: transform 0.3s, color 0.3s;
-    }
-
-    .social-icons i:hover {
-        transform: scale(1.2);
-        color: #ff9800;
-    }
-}
-
-/* Ajustes para pantallas pequeñas (menos de 601px) */
-@media screen and (max-width: 600px) {
-    .top-bar {
-        flex-direction: column; /* Alineación vertical para pantallas más pequeñas */
-        text-align: center; /* Centrado del texto */
-        padding: 10px;
-    }
-
-    .contact-info {
-        margin-bottom: 10px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .social-icons a {
-        font-size: 18px;
-    }
-
-    .lista-menu ul {
-        flex-direction: column; /* Los enlaces deben ir apilados */
-        gap: 10px;
-    }
-
-    nav {
-        gap: 8px;
-        padding: 8px 0;
-        font-size: 15px;
-    }
-
-    nav a {
-        font-size: 13px;
-        padding: 4px 6px;
-    }
-
-    .overlay h1 {
-        font-size: 24px;
-    }
-
-    .overlay h3 {
-        font-size: 16px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr; /* Una columna */
-        gap: 15px;
-    }
-
-    .mision, .vision {
-        padding: 12px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1.5rem;
-    }
-
-    .mision p, .vision p {
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-    .evaluacion p {
-        font-size: 1.6rem;
-        padding: 0 12px;
-    }
-}
-
-
-
-/* Responsive para pantallas de 425px a 600px */
-@media screen and (min-width: 425px) and (max-width: 600px) {
-    /* Ajustes generales */
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contact-info {
-        margin-bottom: 15px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .social-icons a {
-        font-size: 16px;
-    }
-
-    .lista-menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav {
-        gap: 6px;
-        padding: 6px 0;
-        font-size: 14px;
-    }
-
-    nav a {
-        font-size: 12px;
-        padding: 4px 6px;
-    }
-
-    .overlay h1 {
-        font-size: 22px;
-    }
-
-    .overlay h3 {
-        font-size: 14px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr; /* 1 columna */
-        gap: 10px;
-    }
-
-    .mision, .vision {
-        padding: 10px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1.3rem;
-    }
-
-    .mision p, .vision p {
-        font-size: 1rem;
-        text-align: justify;
-    }
-
-    .evaluacion p {
-        font-size: 1.5rem;
-        padding: 0 10px;
-    }
-}
-
-/* Responsive para pantallas ultra pequeñas (320px a 425px) */
-@media screen and (min-width: 320px) and (max-width: 425px) {
-    /* Ajustes generales */
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contact-info {
-        margin-bottom: 10px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .social-icons a {
-        font-size: 14px;
-    }
-
-    .lista-menu ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    nav {
-        gap: 5px;
-        padding: 5px 0;
-        font-size: 12px;
-    }
-
-    nav a {
-        font-size: 10px;
-        padding: 3px 5px;
-    }
-
-    .overlay h1 {
-        font-size: 20px;
-    }
-
-    .overlay h3 {
-        font-size: 12px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr; /* 1 columna */
-        gap: 8px;
-    }
-
-    .mision, .vision {
-        padding: 8px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1.2rem;
-    }
-
-    .mision p, .vision p {
-        font-size: 0.9rem;
-        text-align: justify;
-    }
-
-    .evaluacion p {
-        font-size: 1.4rem;
-        padding: 0 8px;
-    }
-}
-
-/* Responsive para pantallas muy pequeñas (menos de 320px) */
-@media screen and (max-width: 320px) {
-    /* Ajustes generales */
-    .top-bar {
-        flex-direction: column;
-        text-align: center;
-        padding: 8px;
-    }
-
-    .contact-info {
-        margin-bottom: 5px;
-    }
-
-    .social-icons {
-        display: flex;
-        justify-content: center;
-        gap: 8px;
-    }
-
-    .social-icons a {
-        font-size: 12px;
-    }
-
-    .lista-menu ul {
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    nav {
-        gap: 4px;
-        padding: 4px 0;
-        font-size: 10px;
-    }
-
-    nav a {
-        font-size: 8px;
-        padding: 3px 4px;
-    }
-
-    .overlay h1 {
-        font-size: 18px;
-    }
-
-    .overlay h3 {
-        font-size: 10px;
-    }
-
-    .servicios-container {
-        display: grid;
-        grid-template-columns: 1fr; /* 1 columna */
-        gap: 6px;
-    }
-
-    .mision, .vision {
-        padding: 6px;
-    }
-
-    .mision h2, .vision h2 {
-        font-size: 1rem;
-    }
-
-    .mision p, .vision p {
-        font-size: 0.8rem;
-        text-align: justify;
-    }
-
-    .evaluacion p {
-        font-size: 1.2rem;
-        padding: 0 6px;
-    }
-}
