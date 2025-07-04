@@ -1,3 +1,42 @@
+body {
+    background-color: #e3f2fd; /* Azul claro */
+    color: #333;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    position: relative;
+    background-color: #88bbcc; /* Rojo */
+    height: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header:hover {
+    background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
+}
+
+header .overlay {
+    background: #88bbcc; /* Rojo */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+}
+
+header .overlay:hover {
+    background-color: #88bbcc; /* Rojo más oscuro al pasar el mouse */
+}
+
 #recursos {
     background-color: #ffffff;
     padding: 50px 20px;
