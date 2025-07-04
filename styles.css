@@ -184,6 +184,16 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    text-align: center;
+    padding: 10px;
+}
 /* Barra superior */
 .top-bar {
     background-color: #000; /* Negro */
