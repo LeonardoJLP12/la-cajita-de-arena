@@ -1255,3 +1255,72 @@ nav ul li a:hover {
             padding: 0 6px;
         }
     }
+ @media screen and (min-width: 321px) and (max-width: 362px) {
+    .top-bar {
+            flex-direction: column;
+            text-align: center;
+            padding: 8px;
+        }
+
+        .contact-info {
+            margin-bottom: 5px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .social-icons a {
+            font-size: 12px;
+        }
+
+        .lista-menu ul {
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        nav {
+            gap: 4px;
+            padding: 4px 0;
+            font-size: 10px;
+        }
+
+        nav a {
+            font-size: 8px;
+            padding: 3px 4px;
+        }
+
+        .overlay h1 {
+            font-size: 18px;
+        }
+
+        .overlay h3 {
+            font-size: 10px;
+        }
+
+        .servicios-container {
+            display: grid;
+            grid-template-columns: 1fr; /* 1 columna */
+            gap: 6px;
+        }
+
+        .mision, .vision {
+            padding: 6px;
+        }
+
+        .mision h2, .vision h2 {
+            font-size: 1rem;
+        }
+
+        .mision p, .vision p {
+            font-size: 0.8rem;
+            text-align: justify;
+        }
+
+        .evaluacion p {
+            font-size: 1.2rem;
+            padding: 0 6px;
+        }
+}
